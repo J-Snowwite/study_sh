@@ -24,7 +24,7 @@ if [[ "$status" =~ "active" ]];then
 fi
 
 #下载镜像
-wget --user yangshiwen --password Yang@123 $image_url;
+wget --user AAA --password AAA $image_url;
 
 #获取文件格式类型,判断文件格式进行转换
 file_format=`qemu-img info $image_name |grep file|awk '{ print $3}'`
